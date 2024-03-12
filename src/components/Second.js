@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Hoc from './Hoc'
 const Second = () => {
     const [money,setMoney] = useState(1)
     const handleSubmit = () =>{
@@ -10,4 +11,4 @@ const Second = () => {
     </>
 }
 
-export default Second
+export default Hoc(Second)
